@@ -31,6 +31,7 @@ class MovieFormViewModel extends ChangeNotifier {
         ctrlTitle.text = payload.title;
         ctrlDirector.text = payload.director;
         ctrlSummary.text = payload.summary;
+        ctrlThumbnail.text = payload.thumbnail;
         selectedGenre = payload.genres.split(",");
         notifyListeners();
       }
